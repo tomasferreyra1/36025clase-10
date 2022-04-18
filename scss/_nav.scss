@@ -1,0 +1,58 @@
+.encabezado {
+    background: $verde;
+    font-family: $font;
+}
+
+.menu {
+    background-color: $verde;
+    height: 90px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $blanco;
+    box-shadow: 5px 0 10px rgba(0,0,0,.6);
+}
+
+.logo {
+    margin: 20px;
+    margin-left: 20px;
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
+}
+    
+.nombre {
+    color: $blanco;
+    font-size: 25px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
+    li {
+        border-radius: 3px;
+        margin: 0 5px;
+
+        a {
+            padding: 7px 13px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            text-transform: uppercase;
+            color: $blanco;
+            transition: .5s;
+
+            &:hover {
+                background-color: $blanco;
+                color: $verde;
+            }
+        }
+    }
+}

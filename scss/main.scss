@@ -1,0 +1,14 @@
+$font : 'Permanent Marker', cursive;
+$verde : #25be80;
+$blanco: #F8F7F7;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "nav";
+@import "main";
+@import "footer";
+@import "catalogo";
+@import "media";

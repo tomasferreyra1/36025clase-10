@@ -1,0 +1,46 @@
+.pie {
+    background-color: $verde;
+    padding: 35px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+
+.container-footer{
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: $verde;
+}
+
+.icon {
+    display: inline-block;
+    width: 22.8%;
+    padding: 20px;
+    background-color: $verde;
+    position: relative;
+    text-align: center;
+
+    img {
+        width: 36px;
+        height: 36px;
+        background-color: $verde;
+    }
+
+    a {
+        font-size: 18px;
+        color: $blanco;
+        text-decoration: none;
+        padding: 0 13px;
+        text-align: center;
+        display: block;
+        transition: .5s;
+
+        &:hover {
+            color: $verde;
+            background-color: $blanco;
+        }
+    }
+}
