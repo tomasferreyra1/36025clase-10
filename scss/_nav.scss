@@ -50,8 +50,7 @@
             transition: .5s;
 
             &:hover {
-                background-color: $blanco;
-                color: $verde;
+                @include hover1;
             }
         }
     }

@@ -37,8 +37,7 @@
     }
 
     &:hover {
-        background-color: $verde;
-        color: $blanco;
+        @include hover2;
         height: 350px;
         width: 300px;
     }

@@ -5,7 +5,6 @@
     width: 100%;
 }
 
-
 .container-footer{
     font-size: 14px;
     display: flex;
@@ -31,16 +30,16 @@
 
     a {
         font-size: 18px;
-        color: $blanco;
+        color: map-get($estilo_texto, color);
         text-decoration: none;
         padding: 0 13px;
-        text-align: center;
+        text-align: map-get($estilo_texto, posicion);
         display: block;
         transition: .5s;
+        font-family: map-get($estilo_texto, fuente);
 
         &:hover {
-            color: $verde;
-            background-color: $blanco;
+            @include hover1;
         }
     }
 }

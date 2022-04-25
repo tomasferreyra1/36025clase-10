@@ -1,0 +1,15 @@
+$font : 'Permanent Marker', cursive;
+$verde : #25be80;
+$blanco: #F8F7F7;
+
+$estilo_texto: (fuente: $font, color: $blanco, fondo: $verde, posicion: center);
+
+@mixin hover1 {
+    color: map-get($estilo_texto, fondo);
+    background-color: map-get($estilo_texto, color);
+}
+
+@mixin hover2 {
+    color: map-get($estilo_texto, color);
+    background-color: map-get($estilo_texto, fondo);
+}

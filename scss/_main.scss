@@ -9,34 +9,26 @@ body {
 }
 
 h1 {
-    font-family: $font;
-    color: $blanco;
-    background-color: $verde;
-    text-align: center;
+    font-family: map-get($estilo_texto, fuente);
+    color: map-get($estilo_texto, color);
+    background-color: map-get($estilo_texto, fondo);
+    text-align: map-get($estilo_texto, posicion);
 }
 
 h2 {
-    color: var(--miverde);
-    background-color: var(--miblanco);
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
+    @extend h1;
     font-size: 40px;
 }
 
 h4 {
-    font-family: 'Permanent Marker', cursive;
-    color: var(--miverde);
-    background-color: var(--miblanco);
+    font-family: map-get($estilo_texto, fuente);
+    color: map-get($estilo_texto, fondo);
     font-size: 20px;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
-main {
-    color: $blanco;
-}
 
 .parallax {
     background-image: url("../img/imagen-de-perchas-con-ropa.jpg");
@@ -51,6 +43,7 @@ main {
     margin: $blanco;
 }
 
+
 #main-index {
     display: grid;
     grid-template-columns: auto;
@@ -59,11 +52,21 @@ main {
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-
+    
     h3 {
-        font-family: $font;
-        color: $verde;
-        text-align: center;
+        font-family: map-get($estilo_texto, fuente);
+        color: map-get($estilo_texto, fondo);
+        text-align: map-get($estilo_texto, posicion);
+    }
+
+    .color-boton {
+        background-color: map-get($estilo_texto, fondo);
+        border: 1px solid $verde;
+        transition: .5s;
+
+        &:hover {
+            @include hover1;
+        }
     }
 }
 
@@ -72,6 +75,12 @@ main {
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
+
+    h3{
+        font-family: map-get($estilo_texto, fuente);
+        color: map-get($estilo_texto, fondo);
+        text-align: map-get($estilo_texto, posicion);
+    }
 }
 
 
@@ -108,46 +117,4 @@ main {
     }
 }
 
-.form {
-    width: 200px;
-    height: 160px;
-    padding: 20px;
-    margin: auto;
-    font-family: $font;
-
-    h5 {
-        font-size: 20px;
-        margin-bottom: 5px;
-        color: $verde;
-        border: 5px dashed $verde;
-        text-align: center;
-    }
-}
-
-.form-icon {
-    margin-bottom: 3px;
-    width: 100%;
-    background: $verde;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    border: 1px solid $blanco;
-    font-family: $font;
-    font-size: 15px;
-}
-
-.form-boton {
-    width: 100%;
-    font-family: $font;
-    font-size: 15px;
-    text-align: center;
-    color: $blanco;
-    background-color: $verde;
-    transition: .5s;
-
-    &:hover {
-        color: $verde;
-        background-color: $blanco;
-        cursor: pointer;
-    }
-}
 
